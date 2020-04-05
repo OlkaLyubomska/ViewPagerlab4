@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/fragment8"
-        android:name="com.example.viewpager_lab4.Fragment.TextFragment"
+        android:name="com.example.viewpager_lab4.Fragment.Image5"
         android:layout_width="276dp"
         android:layout_height="243dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,11 +43,13 @@
 
     <fragment
         android:id="@+id/fragment9"
-        android:name="com.example.viewpager_lab4.Fragment.PlayMusicFragment"
+        android:name="com.example.viewpager_lab4.Fragment.Image4"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fragment8"
         app:layout_constraintTop_toBottomOf="@+id/fragment7" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

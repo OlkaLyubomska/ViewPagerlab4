@@ -1,19 +1,13 @@
 package com.example.viewpager_lab4;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
 
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import com.example.viewpager_lab4.Fragment.DetailFragment;
 import com.example.viewpager_lab4.Fragment.MenuFragment;
-import com.example.viewpager_lab4.Fragment.PlayMusicFragment;
-import com.example.viewpager_lab4.Fragment.TextFragment;
-import com.example.viewpager_lab4.class2;
-import com.example.viewpager_lab4.class3;
-import com.example.viewpager_lab4.R;
+
 public class MainActivity extends AppCompatActivity implements MenuFragment.nextact, DetailFragment.nextact2 {
 
     @Override

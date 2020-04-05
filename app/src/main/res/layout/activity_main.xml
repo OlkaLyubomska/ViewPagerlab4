@@ -10,7 +10,7 @@
 
     <fragment
         android:id="@+id/fragment2"
-        android:name="com.example.lab4.Fragments.MenuFragment"
+        android:name="com.example.viewpager_lab4.Fragment.MenuFragment"
         android:layout_width="213dp"
         android:layout_height="282dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/fragment4"
-        android:name="com.example.lab4.Fragments.DetailFragment"
+        android:name="com.example.viewpager_lab4.Fragment.DetailFragment"
         android:layout_width="0dp"
         android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,7 +34,7 @@
 
     <fragment
         android:id="@+id/fragment5"
-        android:name="com.example.viewpager_lab4.Fragment.PlayMusicFragment"
+        android:name="com.example.viewpager_lab4.Fragment.Image4"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,12 +44,13 @@
 
     <fragment
         android:id="@+id/fragment6"
-        android:name="com.example.viewpager_lab4.Fragment.TextFragment"
+        android:name="com.example.viewpager_lab4.Fragment.Image5"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fragment5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fragment2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
