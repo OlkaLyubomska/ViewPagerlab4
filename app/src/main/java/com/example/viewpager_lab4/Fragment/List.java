@@ -21,6 +21,7 @@ public class List extends Fragment implements AdapterView.OnItemClickListener {
     public List() {}
 
     private String[] data = { "Google", "pinterest", "yakaboo", "Helvetica" };
+    // lifecycle method call #1
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -32,6 +33,7 @@ public class List extends Fragment implements AdapterView.OnItemClickListener {
         }
     }
 
+    // lifecycle method call #2
     @Override
     public void onDetach() {
         super.onDetach();
@@ -43,6 +45,7 @@ public class List extends Fragment implements AdapterView.OnItemClickListener {
 
         mListener.onFragmentInteraction(data[position]);
     }
+// creating an interface that implements Activity
 
     public interface OnFragmentInteractionListener {
         void onFragmentInteraction(String result);
@@ -56,9 +59,11 @@ public class List extends Fragment implements AdapterView.OnItemClickListener {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        // find the list
         ListView list = view.findViewById(R.id.list);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, data);
+        // assign an adapter to the list
         list.setAdapter(adapter);
         list.setOnItemClickListener(this);
     }

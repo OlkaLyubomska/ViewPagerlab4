@@ -46,9 +46,10 @@ public class Page extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        // create a new object using webview
         WebView web = view.findViewById(R.id.web);
 
+        // setting web settings for correctly work of network components
         WebSettings webSettings = web.getSettings();
         webSettings.setAppCacheEnabled(true);
         webSettings.setCacheMode(webSettings.LOAD_CACHE_ELSE_NETWORK);
@@ -61,7 +62,7 @@ public class Page extends Fragment {
 
         web.loadUrl(mParam1);
 
-        //web.setWebViewClient(new WebViewClient());
+
 
 
     }
