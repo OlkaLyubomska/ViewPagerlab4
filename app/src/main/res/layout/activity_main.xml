@@ -11,57 +11,43 @@
     <fragment
         android:id="@+id/fragment2"
         android:name="com.example.viewpager_lab4.Fragment.MenuFragment"
-        android:layout_width="116dp"
-        android:layout_height="539dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_width="118dp"
+        android:layout_height="409dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/fragment5"
+        app:layout_constraintTop_toBottomOf="@+id/fragment4" />
+
 
     <fragment
         android:id="@+id/fragment4"
         android:name="com.example.viewpager_lab4.Fragment.DetailFragment"
         android:layout_width="118dp"
-        android:layout_height="187dp"
+        android:layout_height="195dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment2"
-        app:layout_constraintEnd_toStartOf="@+id/frag_port3"
-        app:layout_constraintStart_toEndOf="@+id/frag_port1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintEnd_toStartOf="@+id/fragment5" />
+
 
     <fragment
         android:id="@+id/fragment5"
         android:name="com.example.viewpager_lab4.Fragment.Image4"
-        android:layout_width="285dp"
-        android:layout_height="362dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="532dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/fragment4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_width="294dp"
+        android:layout_height="242dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment6"
+        app:layout_constraintStart_toEndOf="@+id/fragment2" />
 
     <fragment
         android:id="@+id/fragment6"
         android:name="com.example.viewpager_lab4.Fragment.Image5"
         android:layout_width="297dp"
         android:layout_height="362dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/frag_port1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toEndOf="@+id/fragment2"
+        app:layout_constraintTop_toBottomOf="@+id/fragment5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
