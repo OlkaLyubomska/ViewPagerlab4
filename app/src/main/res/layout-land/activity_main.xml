@@ -7,47 +7,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<fragment
-android:id="@+id/fragment"
-android:name="com.example.viewpager_lab4.Fragment.DetailFragment"
-android:layout_width="279dp"
-android:layout_height="166dp"
-app:layout_constraintBottom_toBottomOf="parent"
-app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintHorizontal_bias="0.0"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toTopOf="parent"
-app:layout_constraintVertical_bias="0.0" />
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.viewpager_lab4.Fragment.DetailFragment"
+        android:layout_width="310dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-<fragment
-android:id="@+id/fragment7"
-android:name="com.example.viewpager_lab4.Fragment.MenuFragment"
-android:layout_width="0dp"
-android:layout_height="229dp"
-app:layout_constraintBottom_toBottomOf="parent"
-app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintHorizontal_bias="1.0"
-app:layout_constraintStart_toEndOf="@+id/fragment"
-app:layout_constraintTop_toTopOf="parent"
-app:layout_constraintVertical_bias="0.0" />
+    <fragment
+        android:id="@+id/fragment7"
+        android:name="com.example.viewpager_lab4.Fragment.MenuFragment"
+        android:layout_width="418dp"
+        android:layout_height="207dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-<fragment
-android:id="@+id/fragment8"
-android:name="com.example.viewpager_lab4.Fragment.Image4"
-android:layout_width="276dp"
-android:layout_height="243dp"
-app:layout_constraintBottom_toBottomOf="parent"
-app:layout_constraintEnd_toStartOf="@+id/fragment7"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toBottomOf="@+id/fragment" />
+    <fragment
+        android:id="@+id/fragment8"
+        android:name="com.example.viewpager_lab4.Fragment.Image4"
+        android:layout_width="316dp"
+        android:layout_height="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-<fragment
-android:id="@+id/fragment9"
-android:name="com.example.viewpager_lab4.Fragment.Image5"
-android:layout_width="0dp"
-android:layout_height="0dp"
-app:layout_constraintBottom_toBottomOf="parent"
-app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintStart_toEndOf="@+id/fragment8"
-app:layout_constraintTop_toBottomOf="@+id/fragment7" />
+    <fragment
+        android:id="@+id/fragment9"
+        android:name="com.example.viewpager_lab4.Fragment.Image5"
+        android:layout_width="414dp"
+        android:layout_height="203dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
 </androidx.constraintlayout.widget.ConstraintLayout>
